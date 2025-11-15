@@ -1,0 +1,22 @@
+<div id="clock"></div>
+
+<style>
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:#00ffea;
+    font-family:monospace;
+    font-size:80px;
+    text-shadow:0 0 20px #00ffee;
+}
+</style>
+
+<script>
+setInterval(()=>{
+    document.getElementById("clock").innerHTML = 
+    new Date().toLocaleTimeString();
+},1000);
+</script>
